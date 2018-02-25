@@ -1,0 +1,18 @@
+ <div class="container">
+  <h1>Orden de trabajo</h1>
+  <form>
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" [(ngModel)]="tareanueva.nombre" name="nombre">
+        <label for="telefono">Telefono</label>
+        <input type="text" class="form-control" id="telefono" [(ngModel)]="tareanueva.telefono" name="telefono">
+        <label for="equipo">Equipo</label>
+        <input type="text" class="form-control" id="equipo" [(ngModel)]="tareanueva.equipo" name="equipo"> 
+        <label for="falla">Falla</label>
+        <input type="text" class="form-control" id="falla" [(ngModel)]="tareanueva.falla" name="falla"> 
+        <label for="sena">Seña</label>
+        <input type="text" class="form-control" id="sena" [(ngModel)]="tareanueva.sena" name="sena">    
+    </div>
+  </form> 
+  <button class="btn btn-success" (click)="imprimir()">Imprimir</button>
+</div>
